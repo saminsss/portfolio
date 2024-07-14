@@ -26,7 +26,8 @@ const config = {
     extend: {
       colors: {
         primary: '#F8F1EC',
-        secondary: '#C4B2F6',
+        secondary: '#3F0E45',
+        tertiary: '#AF78DC',
       },
       height: {
         header: '6rem',
