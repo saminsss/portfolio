@@ -28,6 +28,12 @@ const config = {
         primary: '#F8F1EC',
         secondary: '#C4B2F6',
       },
+      height: {
+        header: '6rem',
+      },
+      spacing: {
+        header: '6rem',
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },

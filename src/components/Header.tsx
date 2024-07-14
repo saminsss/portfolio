@@ -3,7 +3,7 @@ import Nav from './Nav';
 
 const Header = () => {
   return (
-    <header className="py-6 md:py-8 text-black bg-primary">
+    <header className="h-header flex text-black bg-primary">
       <div className="container flex justify-between items-center">
         {/** Logo */}
         <Link href="/">
