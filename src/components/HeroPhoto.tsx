@@ -22,7 +22,7 @@ const PageTransition = () => {
             priority
             quality={100}
             fill
-            className="object-contain"
+            className="object-contain rounded-full"
           />
         </div>
       </motion.div>
