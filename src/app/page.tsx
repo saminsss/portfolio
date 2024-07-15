@@ -3,6 +3,10 @@ import Socials from '@/components/Socials';
 import { Button } from '@/components/ui/button';
 import { FiDownload } from 'react-icons/fi';
 
+const skills = ['AWS', 'Javascript', 'Typescript', 'NodeJS', 'React', 'Vue']
+  .sort()
+  .join(', ');
+
 export default function Home() {
   return (
     <main>
@@ -15,10 +19,11 @@ export default function Home() {
           </h1>
           <p>
             I excel at developing full-stack applications on web platforms.{' '}
+            <br />I am proficient in{' '}
+            <span className="font-semibold">{skills}.</span>
             <br />
-            <span className="font-semibold">
-              Based in Vancouver, BC, Canada.
-            </span>
+            Based in{' '}
+            <span className="font-semibold">Vancouver, BC, Canada.</span>
           </p>
           <div className="w-72 flex flex-col md:flex-row items-center gap-4 self-center md:self-auto">
             <Button variant="outline" className="uppercase">
