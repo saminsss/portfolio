@@ -19,8 +19,8 @@ export default function Home() {
           </h1>
           <p>
             I excel at developing full-stack applications on web platforms.{' '}
-            <br />I am proficient in{' '}
-            <span className="font-semibold">{skills}.</span>
+            <br />
+            Proficient in <span className="font-semibold">{skills}.</span>
             <br />
             Based in{' '}
             <span className="font-semibold">Vancouver, BC, Canada.</span>

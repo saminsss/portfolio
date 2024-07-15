@@ -1,13 +1,21 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
-const HeroPhoto = () => {
+const PageTransition = () => {
+  const pathname = usePathname();
+
   return (
-    <div className="w-72 h-full relative basis-72">
-      <motion.div>
-        <div className="h-72">
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={pathname}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.2, ease: 'easeIn' }}
+        className="w-72 h-full relative basis-72">
+        <div className="h-72 mix-blend-lighten">
           <Image
             src="/assets/photo.jpeg"
             alt="Hero image"
@@ -18,8 +26,8 @@ const HeroPhoto = () => {
           />
         </div>
       </motion.div>
-    </div>
+    </AnimatePresence>
   );
 };
 
-export default HeroPhoto;
+export default PageTransition;
