@@ -13,7 +13,7 @@ const PageTransition = () => {
         key={pathname}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.2, duration: 0.2, ease: 'easeIn' }}
+        transition={{ delay: 0.3, duration: 0.2, ease: 'easeIn' }}
         className="w-72 h-full relative basis-72">
         <div className="h-72 mix-blend-lighten">
           <Image
