@@ -10,7 +10,7 @@ type PageTransitionType = {
 
 const transitionSpringPhysics: Spring = {
   type: 'spring',
-  duration: 0.12,
+  duration: 0.02,
 };
 
 const PageTransition = ({ children }: PageTransitionType) => {
@@ -28,7 +28,7 @@ const PageTransition = ({ children }: PageTransitionType) => {
           className="bg-primary fixed top-header w-screen z-50 overflow-hidden"
           transition={transitionSpringPhysics}
           initial={{ height: '100vh' }}
-          animate={{ height: '0vh', transition: { delay: 0.2 } }}
+          animate={{ height: '0vh', transition: { delay: 0 } }}
         />
         {children}
       </motion.div>
