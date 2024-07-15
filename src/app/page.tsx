@@ -17,7 +17,7 @@ export default function Home() {
             I excel at developing full-stack applications on web platforms.{' '}
             <br />
             <span className="font-semibold">
-              Based in Vancouver, BC, Canada
+              Based in Vancouver, BC, Canada.
             </span>
           </p>
           <div className="w-72 flex flex-col md:flex-row items-center gap-4 self-center md:self-auto">
