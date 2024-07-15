@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import NavButton from './NavButton';
+import { Button } from '../ui/button';
 
 const links = [
   {
@@ -37,7 +37,9 @@ const DesktopNav = () => {
           </Link>
         );
       })}
-      <NavButton href="/resume">Resume</NavButton>
+      <Link href="/resume">
+        <Button>Resume</Button>
+      </Link>
     </nav>
   );
 };
