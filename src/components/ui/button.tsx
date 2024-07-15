@@ -11,7 +11,7 @@ const buttonVariants = cva(
       variant: {
         default: 'bg-secondary rounded-md text-quaternary hover:bg-tertiary',
         outline:
-          'bg-transparent rounded-md border border-secondary text-secondary hover:bg-secondary hover:text-primary',
+          'bg-transparent rounded-md border border-secondary text-secondary hover:bg-secondary hover:text-quaternary',
       },
       size: {
         default: 'h-10 px-8 py-2',

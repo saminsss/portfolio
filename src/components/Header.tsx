@@ -1,6 +1,6 @@
-import DesktopNav from './Nav/DesktopNav';
-import Logo from './Nav/Logo';
-import MobileNav from './Nav/MobileNav';
+import DesktopNav from './nav/DesktopNav';
+import Logo from './nav/Logo';
+import MobileNav from './nav/MobileNav';
 
 const Header = () => {
   return (

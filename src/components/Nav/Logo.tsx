@@ -3,9 +3,9 @@ import Link from 'next/link';
 const Logo = () => {
   return (
     <Link href="/">
-      <h2>
+      <h3>
         samin<span className="text-secondary">.</span>
-      </h2>
+      </h3>
     </Link>
   );
 };
