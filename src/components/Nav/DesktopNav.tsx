@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import NavButton from './NavButton';
 
 const links = [
   {
@@ -18,10 +19,10 @@ const links = [
   },
 ];
 
-const Nav = () => {
+const DesktopNav = () => {
   const path = usePathname();
   return (
-    <nav className="flex gap-8">
+    <nav className="flex gap-8 items-center capitalize transition-all">
       {links.map((link) => {
         return (
           <Link
@@ -29,15 +30,16 @@ const Nav = () => {
             key={link.path}
             className={
               path === link.path
-                ? 'text-secondary border-b-2 border-secondary capitalize font-medium transition-all'
-                : 'capitalize'
+                ? 'text-secondary border-b-2 border-secondary font-medium '
+                : ''
             }>
             {link.name}
           </Link>
         );
       })}
+      <NavButton href="/resume">Resume</NavButton>
     </nav>
   );
 };
 
-export default Nav;
+export default DesktopNav;

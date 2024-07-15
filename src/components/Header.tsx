@@ -1,20 +1,17 @@
-import Link from 'next/link';
-import Nav from './Nav';
-import NavButton from './NavButton';
+import DesktopNav from './Nav/DesktopNav';
+import Logo from './Nav/Logo';
+import MobileNav from './Nav/MobileNav';
 
 const Header = () => {
   return (
     <header className="h-header flex text-black bg-primary">
       <div className="container flex justify-between items-center">
-        {/** Logo */}
-        <Link href="/">
-          <h1 className="text-4xl font-semibold">
-            samin<span className="text-secondary">.</span>
-          </h1>
-        </Link>
-        <div className="flex gap-8 justify-center items-center">
-          <Nav />
-          <NavButton href="/resume">Resume</NavButton>
+        <Logo />
+        <div className="hidden md:flex">
+          <DesktopNav />
+        </div>
+        <div className="flex md:hidden">
+          <MobileNav />
         </div>
       </div>
     </header>

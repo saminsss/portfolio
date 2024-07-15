@@ -19,13 +19,13 @@ const PageTransition = ({ children }: PageTransitionType) => {
     <AnimatePresence mode="wait" initial={false}>
       <motion.div key={pathname}>
         <motion.div
-          className="bg-primary fixed top-header w-screen z-50 overflow-hidden"
+          className="bg-primary fixed top-header w-screen overflow-hidden"
           transition={transitionSpringPhysics}
           animate={{ height: '0vh' }}
           exit={{ height: '100vh' }}
         />
         <motion.div
-          className="bg-primary fixed top-header w-screen z-50 overflow-hidden"
+          className="bg-primary fixed top-header w-screen overflow-hidden"
           transition={transitionSpringPhysics}
           initial={{ height: '100vh' }}
           animate={{ height: '0vh', transition: { delay: 0 } }}
