@@ -28,7 +28,7 @@ const MobileNav = () => {
     <div className="ml-auto">
       <Sheet>
         <SheetTrigger className="flex justify-center items-center">
-          <CiMenuFries className="text-4xl text-secondary" />
+          <CiMenuFries className="text-3xl text-secondary" />
         </SheetTrigger>
         <SheetContent className="flex flex-col justify-center items-center gap-36">
           <Logo />
