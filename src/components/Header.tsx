@@ -14,7 +14,7 @@ const Header = () => {
         </Link>
         <div className="flex gap-8 justify-center items-center">
           <Nav />
-          <NavButton>Resume</NavButton>
+          <NavButton href="/resume">Resume</NavButton>
         </div>
       </div>
     </header>
