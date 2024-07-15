@@ -14,15 +14,15 @@ const PageTransition = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.2, ease: 'easeIn' }}
-        className="w-72 h-full relative basis-72">
-        <div className="h-72 mix-blend-lighten">
+        className="relative">
+        <div className="w-72 h-72">
           <Image
             src="/assets/photo.jpeg"
             alt="Hero image"
             priority
             quality={100}
             fill
-            className="object-contain rounded-full"
+            className="object-cover border-2 border-secondary rounded-full"
           />
         </div>
       </motion.div>
