@@ -10,7 +10,7 @@ type PageTransitionType = {
 
 const transitionSpringPhysics: Spring = {
   type: 'spring',
-  duration: 0.1,
+  duration: 0.5,
 };
 
 const PageTransition = ({ children }: PageTransitionType) => {
@@ -18,6 +18,7 @@ const PageTransition = ({ children }: PageTransitionType) => {
   return (
     <AnimatePresence mode="wait" initial={false}>
       <motion.div key={pathname}>
+        {children}
         <motion.div
           className="bg-primary fixed top-header w-screen overflow-hidden"
           transition={transitionSpringPhysics}
@@ -30,7 +31,6 @@ const PageTransition = ({ children }: PageTransitionType) => {
           initial={{ height: '100vh' }}
           animate={{ height: '0vh', transition: { delay: 0.1 } }}
         />
-        {children}
       </motion.div>
     </AnimatePresence>
   );
