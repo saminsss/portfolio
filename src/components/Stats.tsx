@@ -6,19 +6,21 @@ const stats = [
   {
     num: 3,
     text: 'Years of experience',
+    suffix: '+',
   },
   {
     num: 5,
-    text: 'Projects completed',
+    text: 'End-to-End Projects completed',
   },
   {
     num: 6,
     text: 'Technologies mastered',
   },
   {
-    num: 500,
+    num: 5000,
     text: 'Code commits',
-    duration: 2,
+    duration: 3,
+    suffix: '+',
   },
 ];
 
@@ -31,6 +33,7 @@ const Stats = () => {
             key={stat.text}
             className="flex flex-col md:flex-row gap-2 md:gap-4 items-center justify-center">
             <CountUp
+              suffix={stat.suffix ?? ''}
               end={stat.num}
               duration={stat.duration ?? 5}
               delay={1}
