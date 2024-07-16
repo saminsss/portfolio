@@ -9,7 +9,7 @@ const skills = ['AWS', 'Javascript', 'Typescript', 'NodeJS', 'React', 'Vue']
 
 const Hero = () => {
   return (
-    <section className="flex flex-col md:flex-row gap-8 items-center justify-between text-center md:text-left">
+    <div className="flex flex-col md:flex-row gap-8 items-center justify-between text-center md:text-left">
       <div className="flex flex-col gap-6 flex-1 order-2 md:order-none">
         <h4 className="text-secondary">Software Developer</h4>
         <h2>
@@ -31,7 +31,7 @@ const Hero = () => {
         </div>
       </div>
       <HeroPhoto />
-    </section>
+    </div>
   );
 };
 

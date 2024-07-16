@@ -18,12 +18,13 @@ const stats = [
   {
     num: 500,
     text: 'Code commits',
+    duration: 2,
   },
 ];
 
 const Stats = () => {
   return (
-    <section>
+    <div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center md:justify-items-start">
         {stats.map((stat) => (
           <div
@@ -31,7 +32,7 @@ const Stats = () => {
             className="flex flex-col md:flex-row gap-2 md:gap-4 items-center justify-center">
             <CountUp
               end={stat.num}
-              duration={5}
+              duration={stat.duration ?? 5}
               delay={1}
               className="text-5xl md:text-6xl font-extrabold text-secondary"
             />
@@ -44,7 +45,7 @@ const Stats = () => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

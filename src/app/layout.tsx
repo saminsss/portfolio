@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.variable}>
         <Header />
         <PageTransition>
-          <div className="container py-12">{children}</div>
+          <main className="container py-12">{children}</main>
         </PageTransition>
       </body>
     </html>
