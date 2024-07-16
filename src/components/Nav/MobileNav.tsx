@@ -16,10 +16,6 @@ const links = [
     name: 'work',
     path: '/work',
   },
-  {
-    name: 'blog',
-    path: '/blog',
-  },
 ];
 
 const MobileNav = () => {
