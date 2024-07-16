@@ -24,7 +24,7 @@ const stats = [
 const Stats = () => {
   return (
     <section>
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 justify-items-start">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center md:justify-items-start">
         {stats.map((stat) => (
           <div
             key={stat.text}
