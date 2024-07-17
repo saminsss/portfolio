@@ -27,11 +27,11 @@ const stats = [
 const Stats = () => {
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center md:justify-items-start">
+      <div className="flex flex-col md:flex-row flex-wrap justify-evenly gap-8">
         {stats.map((stat) => (
           <div
             key={stat.text}
-            className="flex flex-col md:flex-row gap-2 md:gap-4 items-center justify-center">
+            className="flex flex-col md:flex-row items-center justify-center">
             <CountUp
               suffix={stat.suffix ?? ''}
               end={stat.num}
