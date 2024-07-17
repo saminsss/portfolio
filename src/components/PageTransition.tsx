@@ -17,7 +17,7 @@ const PageTransition = ({ children }: PageTransitionType) => {
   const pathname = usePathname();
   return (
     <AnimatePresence mode="wait" initial={false}>
-      <div key={pathname}>
+      <div key={pathname} className="overflow-auto h-screen-minus-header">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{

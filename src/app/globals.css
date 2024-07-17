@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-primary;
+    @apply font-primary overflow-hidden;
   }
   h1 {
     @apply text-6xl xl:text-7xl font-semibold;
