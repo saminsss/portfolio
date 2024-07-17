@@ -1,6 +1,6 @@
 'use client';
 
-import { AnimatePresence, motion, Spring } from 'framer-motion';
+import { AnimatePresence, Spring, motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import { ReactNode } from 'react';
 
@@ -17,8 +17,16 @@ const PageTransition = ({ children }: PageTransitionType) => {
   const pathname = usePathname();
   return (
     <AnimatePresence mode="wait" initial={false}>
-      <motion.div key={pathname}>
-        {children}
+      <div key={pathname}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: { delay: 0.4, duration: 0.2 },
+          }}
+          exit={{ opacity: 0, transition: { delay: 0, duration: 0 } }}>
+          {children}
+        </motion.div>
         <motion.div
           className="bg-primary fixed top-header w-screen overflow-hidden"
           transition={transitionSpringPhysics}
@@ -31,7 +39,7 @@ const PageTransition = ({ children }: PageTransitionType) => {
           initial={{ height: '100vh' }}
           animate={{ height: '0vh', transition: { delay: 0.1 } }}
         />
-      </motion.div>
+      </div>
     </AnimatePresence>
   );
 };
