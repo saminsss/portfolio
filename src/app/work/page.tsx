@@ -57,7 +57,7 @@ const Work = () => {
             className="h-full flex flex-col justify-start gap-4 bg-primary p-4 text-quaternary rounded-lg group shadow-xl group">
             <div className="w-full flex justify-between items-center">
               <h2 className="font-extrabold text-quaternary capitalize group-hover:text-secondary transition-all duration-200">
-                {work.num}
+                {String(work.num).padStart(2, '0')}
               </h2>
               <div className="flex gap-2">
                 {work.live && (
@@ -105,7 +105,7 @@ const Work = () => {
             <ul className="flex gap-2 lowercase">
               {work.stack.map((skill) => (
                 <li
-                  key={`${work.live}${skill}`}
+                  key={`${work.github}${skill}`}
                   className="bg-secondary py-1 px-2 rounded-lg text-ellipsis max-w-fit overflow-hidden whitespace-nowrap text-quaternary hover:bg-tertiary hover:-translate-y-1 transition-all duration-200">
                   {skill}
                 </li>
