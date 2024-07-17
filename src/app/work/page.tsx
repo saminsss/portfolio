@@ -9,7 +9,7 @@ import {
 import Link from 'next/link';
 import { BsArrowDownRight, BsGithub } from 'react-icons/bs';
 
-const services = [
+const works = [
   {
     num: 1,
     title: 'Fullstack Project',
@@ -17,15 +17,15 @@ const services = [
       'Client SPA for edtech startup. Includes custom checkout process and analytics for seamless course purchases.',
     live: 'https://uctitbd.com/',
     github: 'https://github.com/UCT-IT/training',
-    skills: ['html5', 'tailwind css', 'nextjs', 'nodejs', 'mongodb'],
+    stack: ['html5', 'tailwind css', 'nextjs', 'nodejs', 'mongodb'],
   },
   {
     num: 2,
     title: 'Frontend Project',
-    description: 'Personal portfolio SPA showcasing my skills and projects.',
+    description: 'Personal portfolio SPA showcasing my stack and projects.',
     live: '/',
     github: 'https://uctitbd.com/',
-    skills: ['html5', 'tailwind css', 'nextjs'],
+    stack: ['html5', 'tailwind css', 'nextjs'],
   },
   {
     num: 3,
@@ -33,7 +33,7 @@ const services = [
     description:
       'Personal SaaS web application to provide a platform for educational institutions to manage/grow their businesses. Integrated reporting tools to help institutions track and optimize operations.',
     github: 'https://github.com/saminsss/Teachify',
-    skills: ['html5', 'tailwind css', 'nextjs', 'nodejs', 'postgresql'],
+    stack: ['html5', 'tailwind css', 'nextjs', 'nodejs', 'postgresql'],
   },
   {
     num: 4,
@@ -41,24 +41,24 @@ const services = [
     description:
       'Client SPA for water filtration company. Includes custom checkout process integrated with a seamless ordering process for filtered bottled water products.',
     github: 'https://uctitbd.com/',
-    skills: ['html5', 'tailwind css', 'nextjs', 'nodejs', 'mongodb'],
+    stack: ['html5', 'tailwind css', 'nextjs', 'nodejs', 'mongodb'],
   },
 ];
 const Work = () => {
   return (
     <section className="flex flex-col justify-center">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {services.map((service) => (
-          <div key={service.live} className="flex flex-col">
-            <div className=" h-full flex flex-col justify-start gap-4 bg-primary p-4 text-quaternary rounded-lg group shadow-xl group order-2 lg:order-none">
+        {works.map((work) => (
+          <div key={work.live} className="flex flex-col">
+            <div className="h-full flex flex-col justify-start gap-4 bg-primary p-4 text-quaternary rounded-lg group shadow-xl group">
               <div className="w-full flex justify-between items-center">
                 <h2 className="font-extrabold text-quaternary capitalize group-hover:text-secondary transition-all duration-200">
-                  {service.num}
+                  {work.num}
                 </h2>
                 <div className="flex gap-2">
-                  {service.live && (
+                  {work.live && (
                     <Link
-                      href={service.live}
+                      href={work.live}
                       rel="noopener noreferrer"
                       target="_blank">
                       <TooltipProvider delayDuration={100}>
@@ -72,7 +72,7 @@ const Work = () => {
                     </Link>
                   )}
                   <Link
-                    href={service.github}
+                    href={work.github}
                     rel="noopener noreferrer"
                     target="_blank">
                     <TooltipProvider delayDuration={100}>
@@ -86,13 +86,13 @@ const Work = () => {
                   </Link>
                 </div>
               </div>
-              <h4>{service.title}</h4>
-              <p>{service.description}</p>
+              <h4>{work.title}</h4>
+              <p>{work.description}</p>
               <ul className="flex gap-2 lowercase">
-                {service.skills.map((skill) => (
+                {work.stack.map((skill) => (
                   <li
-                    key={`${service.live}${skill}`}
-                    className="bg-secondary py-1 px-2 rounded-lg text-quaternary hover:bg-tertiary hover:-translate-y-1 transition-all duration-200">
+                    key={`${work.live}${skill}`}
+                    className="bg-secondary py-1 px-2 rounded-lg text-ellipsis max-w-fit overflow-hidden whitespace-nowrap text-quaternary hover:bg-tertiary hover:-translate-y-1 transition-all duration-200">
                     {skill}
                   </li>
                 ))}
