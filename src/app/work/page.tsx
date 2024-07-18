@@ -1,12 +1,6 @@
 'use client';
 
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip';
-import Link from 'next/link';
+import TooltipButton from '@/components/TooltipButton';
 import { BsArrowDownRight, BsGithub } from 'react-icons/bs';
 
 const works = [
@@ -58,33 +52,23 @@ const Work = () => {
               </h2>
               <div className="flex gap-2">
                 {work.live && (
-                  <Link
-                    href={work.live}
-                    rel="noopener noreferrer"
-                    target="_blank">
-                    <TooltipProvider delayDuration={100}>
-                      <Tooltip>
-                        <TooltipTrigger>
-                          <BsArrowDownRight className="w-14 h-14 p-4 rounded-full group-hover:text-quaternary group-hover:bg-secondary hover:-rotate-45 transition-all duration-200" />
-                        </TooltipTrigger>
-                        <TooltipContent>Live</TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  </Link>
+                  <TooltipButton
+                    link={{ href: work.live }}
+                    tooltipProvider={{ delayDuration: 100 }}
+                    trigger={
+                      <BsArrowDownRight className="w-14 h-14 p-4 rounded-full group-hover:text-quaternary group-hover:bg-secondary hover:-rotate-45 transition-all duration-200" />
+                    }
+                    content="Live"
+                  />
                 )}
-                <Link
-                  href={work.github}
-                  rel="noopener noreferrer"
-                  target="_blank">
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger>
-                        <BsGithub className="w-14 h-14 p-4 rounded-full group-hover:text-quaternary group-hover:bg-secondary hover:p-3 transition-all duration-200" />
-                      </TooltipTrigger>
-                      <TooltipContent>Github</TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                <TooltipButton
+                  link={{ href: work.github }}
+                  tooltipProvider={{ delayDuration: 100 }}
+                  trigger={
+                    <BsGithub className="w-14 h-14 p-4 rounded-full group-hover:text-quaternary group-hover:bg-secondary hover:p-3 transition-all duration-200" />
+                  }
+                  content="Github"
+                />
               </div>
             </div>
             <h4>{work.title}</h4>
