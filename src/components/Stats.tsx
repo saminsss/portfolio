@@ -19,7 +19,7 @@ const stats = [
   {
     num: 5000,
     text: 'Code commits',
-    duration: 3,
+    duration: 2,
     suffix: '+',
   },
 ];
