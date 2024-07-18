@@ -34,7 +34,7 @@ const works = [
     title: 'Fullstack Project',
     description:
       'Client SPA for water filtration company. Includes custom checkout process integrated with a seamless ordering process for filtered bottled water products.',
-    github: 'https://uctitbd.com/',
+    github: 'https://github.com/saminsss/fours-group',
     stack: ['html5', 'tailwind css', 'nextjs', 'nodejs', 'mongodb'],
   },
 ];
@@ -45,34 +45,36 @@ const Work = () => {
         {works.map((work) => (
           <div
             key={work.live}
-            className="h-full flex flex-col justify-start gap-4 bg-primary p-4 text-quaternary rounded-lg group shadow-xl group">
-            <div className="w-full flex justify-between items-center">
-              <h2 className="font-extrabold text-quaternary capitalize group-hover:text-secondary transition-all duration-200">
-                {String(work.num).padStart(2, '0')}
-              </h2>
-              <div className="flex gap-2">
-                {work.live && (
+            className="h-full flex flex-col justify-between gap-4 bg-primary p-4 text-quaternary rounded-lg group shadow-xl group">
+            <div className="flex flex-col gap-4">
+              <div className="w-full flex justify-between items-center">
+                <h2 className="font-extrabold text-quaternary capitalize group-hover:text-secondary transition-all duration-200">
+                  {String(work.num).padStart(2, '0')}
+                </h2>
+                <div className="flex gap-2">
+                  {work.live && (
+                    <TooltipButton
+                      link={{ href: work.live }}
+                      tooltipProvider={{ delayDuration: 100 }}
+                      trigger={
+                        <BsArrowDownRight className="w-14 h-14 p-4 rounded-full group-hover:text-quaternary group-hover:bg-secondary hover:-rotate-45 transition-all duration-200" />
+                      }
+                      content="Live"
+                    />
+                  )}
                   <TooltipButton
-                    link={{ href: work.live }}
+                    link={{ href: work.github }}
                     tooltipProvider={{ delayDuration: 100 }}
                     trigger={
-                      <BsArrowDownRight className="w-14 h-14 p-4 rounded-full group-hover:text-quaternary group-hover:bg-secondary hover:-rotate-45 transition-all duration-200" />
+                      <BsGithub className="w-14 h-14 p-4 rounded-full group-hover:text-quaternary group-hover:bg-secondary hover:p-3 transition-all duration-200" />
                     }
-                    content="Live"
+                    content="Github"
                   />
-                )}
-                <TooltipButton
-                  link={{ href: work.github }}
-                  tooltipProvider={{ delayDuration: 100 }}
-                  trigger={
-                    <BsGithub className="w-14 h-14 p-4 rounded-full group-hover:text-quaternary group-hover:bg-secondary hover:p-3 transition-all duration-200" />
-                  }
-                  content="Github"
-                />
+                </div>
               </div>
+              <h4>{work.title}</h4>
+              <p>{work.description}</p>
             </div>
-            <h4>{work.title}</h4>
-            <p>{work.description}</p>
             <ul className="flex gap-2 lowercase">
               {work.stack.map((skill) => (
                 <li
