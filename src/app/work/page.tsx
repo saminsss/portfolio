@@ -75,11 +75,11 @@ const Work = () => {
               <h4>{work.title}</h4>
               <p>{work.description}</p>
             </div>
-            <ul className="flex gap-2 lowercase">
+            <ul className="flex gap-2 flex-wrap lowercase">
               {work.stack.map((skill) => (
                 <li
                   key={`${work.github}${skill}`}
-                  className="bg-secondary py-1 px-2 rounded-lg text-ellipsis max-w-fit overflow-hidden whitespace-nowrap text-quaternary hover:bg-tertiary hover:-translate-y-1 transition-all duration-200">
+                  className="bg-secondary py-1 px-2 rounded-lg text-quaternary hover:bg-tertiary hover:-translate-y-1 transition-all duration-200">
                   {skill}
                 </li>
               ))}
