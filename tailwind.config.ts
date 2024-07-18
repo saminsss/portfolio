@@ -28,7 +28,7 @@ const config = {
         primary: '#244855',
         secondary: '#E64833',
         tertiary: '#874F41',
-        quaternary: '#FBE9D0',
+        quaternary: '#FFFAF4',
       },
       height: {
         header: '6rem',

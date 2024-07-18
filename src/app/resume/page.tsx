@@ -189,7 +189,7 @@ const Resume = () => {
                 {experience.items.map((item) => (
                   <li
                     key={item.company}
-                    className="bg-quaternary py-6 px-10 rounded-xl flex flex-col justify-start items-center md:items-start gap-1 text-primary h-full">
+                    className="bg-quaternary py-6 px-10 rounded-xl flex flex-col justify-start items-center md:items-start gap-1 text-primary h-full shadow-md">
                     <p className="font-semibold text-secondary">
                       {item.duration}
                     </p>
@@ -213,7 +213,7 @@ const Resume = () => {
                 {education.items.map((item) => (
                   <li
                     key={item.institution}
-                    className="bg-quaternary py-6 px-10 rounded-xl flex flex-col justify-start items-center md:items-start gap-1 text-primary h-full">
+                    className="bg-quaternary py-6 px-10 rounded-xl flex flex-col justify-start items-center md:items-start gap-1 text-primary h-full shadow-md">
                     <p className="font-semibold text-secondary">
                       {item.duration}
                     </p>
@@ -232,11 +232,11 @@ const Resume = () => {
           <div className="flex flex-col gap-4">
             <h4>{skills.title}</h4>
             <p className="mb-4">{skills.description}</p>
-            <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 place-items-center">
               {skills.skillList
                 .sort((sa, sb) => sa.name.localeCompare(sb.name))
                 .map((skill) => (
-                  <li key={skill.name}>
+                  <li key={skill.name} className="self-center">
                     <TooltipButton
                       link={{ href: skill.href }}
                       tooltipProvider={{ delayDuration: 100 }}
