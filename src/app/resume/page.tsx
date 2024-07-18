@@ -109,7 +109,7 @@ const Resume = () => {
           <div className="flex flex-col gap-4">
             <h4>{experience.title}</h4>
             <p>{experience.description}</p>
-            <ScrollArea className="h-72 overflow-auto">
+            <ScrollArea className="h-64 md:h-96 overflow-auto">
               <ul className="grid grid-cols-1 xl:grid-cols-2 gap-4 ">
                 {experience.items.map((item) => (
                   <li
