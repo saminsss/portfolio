@@ -6,6 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { FaCss3, FaHtml5, FaJava, FaJs, FaNode, FaReact } from 'react-icons/fa';
 
 import {
+  SiAdobe,
   SiAmazonaws,
   SiDocker,
   SiMongodb,
@@ -211,6 +212,11 @@ const skills = {
       icon: <SiNuxtdotjs />,
       name: 'nuxt.js',
       href: 'https://nuxt.com/',
+    },
+    {
+      icon: <SiAdobe />,
+      name: 'adobe edge delivery services',
+      href: 'https://www.aem.live/',
     },
   ],
 };
