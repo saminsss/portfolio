@@ -16,6 +16,7 @@ import {
   SiNuxtdotjs,
   SiPostgresql,
   SiTailwindcss,
+  SiTypescript,
   SiVuedotjs,
 } from 'react-icons/si';
 
@@ -217,6 +218,11 @@ const skills = {
       icon: <SiAdobe />,
       name: 'adobe edge delivery services',
       href: 'https://www.aem.live/',
+    },
+    {
+      icon: <SiTypescript />,
+      name: 'typescript',
+      href: 'https://www.typescriptlang.org/',
     },
   ],
 };
