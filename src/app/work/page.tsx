@@ -18,7 +18,7 @@ const works = [
     title: 'Frontend Project',
     description: 'Personal portfolio SPA showcasing my stack and projects.',
     live: '/',
-    github: 'https://uctitbd.com/',
+    github: 'https://github.com/saminsss/portfolio',
     stack: ['html5', 'tailwind css', 'nextjs'],
   },
   {
