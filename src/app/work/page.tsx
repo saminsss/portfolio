@@ -6,7 +6,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-import Image from 'next/image';
 import Link from 'next/link';
 import { BsArrowDownRight, BsGithub } from 'react-icons/bs';
 
@@ -19,7 +18,6 @@ const works = [
     live: 'https://uctitbd.com/',
     github: 'https://github.com/UCT-IT/training',
     stack: ['html5', 'tailwind css', 'nextjs', 'nodejs', 'mongodb'],
-    image: '/assets/work/thumb1.png',
   },
   {
     num: 2,
@@ -28,7 +26,6 @@ const works = [
     live: '/',
     github: 'https://uctitbd.com/',
     stack: ['html5', 'tailwind css', 'nextjs'],
-    image: '/assets/work/thumb2.png',
   },
   {
     num: 3,
@@ -91,16 +88,6 @@ const Work = () => {
               </div>
             </div>
             <h4>{work.title}</h4>
-            {work.image && (
-              <div className="w-full h-96 relative rounded-lg">
-                <Image
-                  src={work.image}
-                  alt={work.title}
-                  fill
-                  className="object-cover object-left-top rounded-lg border-2 border-primary"
-                />
-              </div>
-            )}
             <p>{work.description}</p>
             <ul className="flex gap-2 lowercase">
               {work.stack.map((skill) => (
