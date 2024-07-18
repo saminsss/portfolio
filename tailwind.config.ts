@@ -32,7 +32,7 @@ const config = {
       },
       height: {
         header: '6rem',
-        'screen-minus-header': 'calc(100vh - theme(spacing.header))',
+        'screen-minus-header': 'calc(100dvh - theme(spacing.header))',
       },
       spacing: {
         header: '6rem',
