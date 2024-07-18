@@ -279,7 +279,7 @@ const Resume = () => {
               {education.items.map((item) => (
                 <li
                   key={item.institution}
-                  className="bg-quaternary py-6 px-10 rounded-xl flex flex-col justify-start items-center md:items-start gap-1 text-primary h-full shadow-md">
+                  className="bg-quaternary py-6 px-10 h-fit rounded-xl flex flex-col justify-start items-center md:items-start gap-1 text-primary shadow-md">
                   <p className="font-semibold text-secondary">
                     {item.duration}
                   </p>
