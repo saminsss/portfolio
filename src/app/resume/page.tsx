@@ -1,7 +1,6 @@
 'use client';
 
 import TooltipButton from '@/components/TooltipButton';
-import { ScrollArea } from '@/components/ui/scroll-area';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { FaCss3, FaHtml5, FaJava, FaJs, FaNode, FaReact } from 'react-icons/fa';
 
@@ -20,7 +19,17 @@ import {
 
 const about = {
   title: 'About me',
-  description: 'Lorem ipsum',
+  description: `I’m a Software Developer with 3+ years of professional experience in Agile environments, specializing in the entire software development lifecycle. My passion is to create robust software with seamless user experiences.
+
+Throughout my career, I have honed my skills in Java, JavaScript, Node, React, and REST APIs. With a strong foundation in object-oriented programming (OOP), design patterns, best practices, algorithms, and data structures, I bring a comprehensive skill set to every project.
+
+In addition to my technical expertise, I have excellent communication and team working skills. I believe that effective collaboration and open communication are key to successful software development. I actively engage with stakeholders, gather requirements, and ensure clear and concise communication within cross-functional teams, enabling us to deliver high-quality software solutions on time.
+
+A little about why I chose software development as my career path; during my second year of university I was fascinated by the concept of how computer software operated. Starting from logic gates carrying out the instructions I write in assembly to the intricate algorithms using high level languages all grabbed my interest and fuelled a burning desire to learn more. That's when I started chasing my passion in software.
+
+Driven by a passion for continuous growth and innovation, I seek new opportunities and collaborations that will challenge me professionally and contribute to my personal development. I would love to connect if you're looking for a dedicated and adaptable Software Developer who thrives in dynamic environments and values effective teamwork.
+
+Please do not hesitate to reach out to me for exciting job opportunities and potential collaborations.`,
   items: [
     {
       fieldName: 'Name',
@@ -37,6 +46,15 @@ const about = {
     {
       fieldName: 'Email',
       fieldValue: 'saminsss@gmail.com',
+    },
+    { fieldName: 'Github', fieldValue: 'github.com/saminsss' },
+    {
+      fieldName: 'Linkedin',
+      fieldValue: 'linkedin.com/in/saminislam/',
+    },
+    {
+      fieldName: 'Location',
+      fieldValue: 'Vancouver, BC. Canada.',
     },
   ],
 };
@@ -73,7 +91,7 @@ const education = {
   items: [
     {
       institution: 'University of British Columbia',
-      degree: 'BASc.',
+      degree: 'BASc. (Electrical Engineering)',
       duration: 'Sep, 2015 - May, 2021',
     },
   ],
@@ -183,49 +201,45 @@ const Resume = () => {
         <TabsContent value="experience">
           <div className="flex flex-col gap-4">
             <h4>{experience.title}</h4>
-            <ScrollArea className="h-82 md:h-112 overflow-auto">
-              <p className="mb-6">{experience.description}</p>
-              <ul className="grid grid-cols-1 xl:grid-cols-2 gap-4 ">
-                {experience.items.map((item) => (
-                  <li
-                    key={item.company}
-                    className="bg-quaternary py-6 px-10 rounded-xl flex flex-col justify-start items-center md:items-start gap-1 text-primary h-full shadow-md">
-                    <p className="font-semibold text-secondary">
-                      {item.duration}
-                    </p>
-                    <p className="font-bold mb-4 text-xl">{item.position}</p>
-                    <div className="flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full bg-secondary"></span>
-                      <p className="font-bold">{item.company}</p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </ScrollArea>
+            <p className="mb-6">{experience.description}</p>
+            <ul className="grid grid-cols-1 xl:grid-cols-2 gap-4 ">
+              {experience.items.map((item) => (
+                <li
+                  key={item.company}
+                  className="bg-quaternary py-6 px-10 rounded-xl flex flex-col justify-start items-center md:items-start gap-1 text-primary h-full shadow-md">
+                  <p className="font-semibold text-secondary">
+                    {item.duration}
+                  </p>
+                  <p className="font-bold mb-4 text-xl">{item.position}</p>
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-secondary"></span>
+                    <p className="font-bold">{item.company}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </TabsContent>
         <TabsContent value="education">
           <div className="flex flex-col gap-4">
             <h4>{education.title}</h4>
-            <ScrollArea className="h-82 md:h-112 overflow-auto">
-              <p className="mb-6">{education.description}</p>
-              <ul className="grid grid-cols-1 gap-4">
-                {education.items.map((item) => (
-                  <li
-                    key={item.institution}
-                    className="bg-quaternary py-6 px-10 rounded-xl flex flex-col justify-start items-center md:items-start gap-1 text-primary h-full shadow-md">
-                    <p className="font-semibold text-secondary">
-                      {item.duration}
-                    </p>
-                    <p className="font-bold mb-4 text-xl">{item.degree}</p>
-                    <div className="flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full bg-secondary"></span>
-                      <p className="font-bold">{item.institution}</p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </ScrollArea>
+            <p className="mb-6">{education.description}</p>
+            <ul className="grid grid-cols-1 gap-4">
+              {education.items.map((item) => (
+                <li
+                  key={item.institution}
+                  className="bg-quaternary py-6 px-10 rounded-xl flex flex-col justify-start items-center md:items-start gap-1 text-primary h-full shadow-md">
+                  <p className="font-semibold text-secondary">
+                    {item.duration}
+                  </p>
+                  <p className="font-bold mb-4 text-xl">{item.degree}</p>
+                  <div className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-secondary"></span>
+                    <p className="font-bold">{item.institution}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </TabsContent>
         <TabsContent value="skills">
@@ -252,7 +266,24 @@ const Resume = () => {
             </ul>
           </div>
         </TabsContent>
-        <TabsContent value="aboutme">About me</TabsContent>
+        <TabsContent value="aboutme">
+          <div className="flex flex-col gap-4">
+            <h4>{about.title}</h4>
+            <p className="mb-4 whitespace-pre-wrap">{about.description}</p>
+            <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4">
+              {about.items.map((item) => (
+                <li
+                  key={item.fieldName}
+                  className="flex gap-4 justify-center items-center md:justify-start">
+                  <span className="text-xs text-secondary font-semibold">
+                    {item.fieldName}
+                  </span>
+                  <span>{item.fieldValue}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </TabsContent>
       </div>
     </Tabs>
   );

@@ -33,8 +33,6 @@ const config = {
       height: {
         header: '6rem',
         'screen-minus-header': 'calc(100vh - theme(spacing.header))',
-        82: '20.5rem',
-        112: '28rem',
       },
       spacing: {
         header: '6rem',
