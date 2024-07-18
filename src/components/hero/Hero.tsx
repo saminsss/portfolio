@@ -1,4 +1,5 @@
-import { FiDownload } from 'react-icons/fi';
+import Link from 'next/link';
+import { FiArrowRight } from 'react-icons/fi';
 import Socials from '../Socials';
 import { Button } from '../ui/button';
 import HeroPhoto from './HeroPhoto';
@@ -24,8 +25,14 @@ const Hero = () => {
         </p>
         <div className="w-72 flex flex-col md:flex-row items-center gap-4 self-center md:self-auto">
           <Button variant="outline" className="uppercase">
-            <span className="mr-4">Download Resume</span>
-            <FiDownload className="text-lg" />
+            <Link
+              href="https://drive.google.com/file/d/1A2Mjlv8FKvKSD_CuKhfU_XLZjOfahdxm/view?usp=drive_link"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="mr-4">
+              Go To Resume
+            </Link>
+            <FiArrowRight className="text-lg" />
           </Button>
           <Socials iconClass="w-9 h-9 border border-secondary rounded-full flex justify-center items-center text-secondary hover:bg-secondary hover:text-quaternary hover:transition-all duration-200" />
         </div>
