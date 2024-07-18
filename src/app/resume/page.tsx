@@ -108,8 +108,8 @@ const Resume = () => {
         <TabsContent value="experience">
           <div className="flex flex-col gap-4">
             <h4>{experience.title}</h4>
-            <p>{experience.description}</p>
-            <ScrollArea className="h-64 md:h-96 overflow-auto">
+            <ScrollArea className="h-82 md:h-112 overflow-auto">
+              <p className="mb-6">{experience.description}</p>
               <ul className="grid grid-cols-1 xl:grid-cols-2 gap-4 ">
                 {experience.items.map((item) => (
                   <li
