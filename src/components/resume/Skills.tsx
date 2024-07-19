@@ -19,7 +19,7 @@ import TooltipButton from '../TooltipButton';
 const skills = {
   title: 'My skills',
   description:
-    'Throughout my career, I have honed my skills in AWS, Java, JavaScript, Node, React, and REST APIs. With a strong foundation in object-oriented programming (OOP), design patterns, best practices, algorithms, and data structures, I bring a comprehensive skill set to every project.',
+    'Throughout my career, I have honed my skills in AWS, Java, JavaScript, NextJS, Nuxt, Node, React, SQL, TypeScript, Vue. With a strong foundation in object-oriented programming (OOP), design patterns, best practices, algorithms, and data structures, I bring a comprehensive skill set to every project.',
   skillList: [
     {
       icon: <FaHtml5 />,
