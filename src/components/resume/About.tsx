@@ -2,7 +2,7 @@ const about = {
   title: 'About me',
   description: `I’m a Software Developer with 3+ years of professional experience in Agile environments, specializing in the entire software development lifecycle. My passion is to create robust software with seamless user experiences.
 
-Throughout my career, I have honed my skills in Java, JavaScript, Node, React, and REST APIs. With a strong foundation in object-oriented programming (OOP), design patterns, best practices, algorithms, and data structures, I bring a comprehensive skill set to every project.
+Throughout my career, I have honed my skills in AWS, Java, JavaScript, NextJS, Nuxt, Node, React, SQL, TypeScript, Vue. With a strong foundation in object-oriented programming (OOP), design patterns, best practices, algorithms, and data structures, I bring a comprehensive skill set to every project.
 
 In addition to my technical expertise, I have excellent communication and team working skills. I believe that effective collaboration and open communication are key to successful software development. I actively engage with stakeholders, gather requirements, and ensure clear and concise communication within cross-functional teams, enabling us to deliver high-quality software solutions on time.
 
