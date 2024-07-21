@@ -29,7 +29,7 @@ const Hero = () => {
               href="https://drive.google.com/file/d/1-ecGLEXAMfR-Avhr3RDGUwKmbPNTKW05/view?usp=sharing"
               target="_blank"
               rel="noreferrer noopener"
-              className="py-4 px-8">
+              className="px-8">
               <div className="flex gap-4 items-center">
                 <span>Go To Resume</span>
                 <FiArrowRight className="text-lg" />
