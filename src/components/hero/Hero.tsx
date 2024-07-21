@@ -24,15 +24,17 @@ const Hero = () => {
           Based in <span className="font-semibold">Vancouver, BC, Canada.</span>
         </p>
         <div className="w-72 flex flex-col md:flex-row items-center gap-4 self-center md:self-auto">
-          <Button variant="outline" className="uppercase">
+          <Button variant="outline" className="uppercase p-0">
             <Link
               href="https://drive.google.com/file/d/1-ecGLEXAMfR-Avhr3RDGUwKmbPNTKW05/view?usp=sharing"
               target="_blank"
               rel="noreferrer noopener"
-              className="mr-4">
-              Go To Resume
+              className="py-4 px-8">
+              <div className="flex gap-4 items-center">
+                <span>Go To Resume</span>
+                <FiArrowRight className="text-lg" />
+              </div>
             </Link>
-            <FiArrowRight className="text-lg" />
           </Button>
           <Socials iconClass="w-9 h-9 border border-secondary rounded-full flex justify-center items-center text-secondary hover:bg-secondary hover:text-quaternary hover:transition-all duration-200" />
         </div>
