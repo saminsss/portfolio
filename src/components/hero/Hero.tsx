@@ -26,7 +26,7 @@ const Hero = () => {
         <div className="w-72 flex flex-col md:flex-row items-center gap-4 self-center md:self-auto">
           <Button variant="outline" className="uppercase">
             <Link
-              href="https://drive.google.com/file/d/1A2Mjlv8FKvKSD_CuKhfU_XLZjOfahdxm/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1eTf9oBcp6JW_Jp7FH76eOzrhMmjGmjil/view?usp=drive_link"
               target="_blank"
               rel="noreferrer noopener"
               className="mr-4">
