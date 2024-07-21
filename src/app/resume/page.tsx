@@ -1,6 +1,7 @@
 'use client';
 
 import About from '@/components/resume/About';
+import Certifications from '@/components/resume/Certifications';
 import Education from '@/components/resume/Education';
 import Experience from '@/components/resume/Experience';
 import Skills from '@/components/resume/Skills';
@@ -15,6 +16,7 @@ const Resume = () => {
         <TabsTrigger value="experience">Experience</TabsTrigger>
         <TabsTrigger value="education">Education</TabsTrigger>
         <TabsTrigger value="skills">Skills</TabsTrigger>
+        <TabsTrigger value="certifications">Certifications</TabsTrigger>
         <TabsTrigger value="aboutme">About me</TabsTrigger>
       </TabsList>
 
@@ -27,6 +29,9 @@ const Resume = () => {
         </TabsContent>
         <TabsContent value="skills">
           <Skills />
+        </TabsContent>
+        <TabsContent value="certifications">
+          <Certifications />
         </TabsContent>
         <TabsContent value="aboutme">
           <About />
