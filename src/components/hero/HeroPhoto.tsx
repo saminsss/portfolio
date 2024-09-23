@@ -17,7 +17,7 @@ const PageTransition = () => {
         className="relative">
         <div className="w-72 h-72 relative">
           <Image
-            src="/assets/photo.jpeg"
+            src="/assets/photo.jpg"
             alt="Hero image"
             priority
             quality={100}
@@ -34,9 +34,9 @@ const PageTransition = () => {
             <motion.circle
               cx="72"
               cy="72"
-              r="71"
+              r="70"
               stroke="#E64833"
-              strokeWidth="2"
+              strokeWidth="3"
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
