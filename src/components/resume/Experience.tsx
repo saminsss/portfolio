@@ -11,16 +11,17 @@ const experience = {
       position: 'Intermediate Software Developer',
       duration: 'Sep, 2022 - Present',
       actions: [
-        `Developed a Wordpress headless CMS app with AWS (Amplify, Cognito, DynamoDB, Lambda, API Gateway), Vue, Javascript and NodeJS. Sustained
-healthy user growth through analytics optimizations and achieved 20% increased revenue through checkout integration.`,
-        `Developed an identity data web application meeting WCAG 2.0 accessibility standards using React, TypeScript, Node.js, and MongoDB. It analyzes and
-consolidates customers’ identity data into one platform. Implemented optimized microservices monitoring user session activities while streamlining
-data consolidation reducing server load by 12%.`,
-        `Developed an AEM Edge Delivery Services headless CMS app with JavaScript. Achieved a perfect 100 Lighthouse score in the frontend application by
-optimizing TBT, TTI and FID.`,
-        `Attained notable 90% test coverages through comprehensive unit testing in JavaScript/JEST and Cypress end-to-end testing framework, ensuring
-resilient codebases.`,
-        `Optimized deployment processes, resulting in a 15% reduction in system downtime using Docker and NGINX.`,
+        `Developed and deployed a full-stack serverless web application utilizing AWS (Amplify, Lambda, Cognito, DynamoDB, API
+Gateway), Vue.js, and Node.js, significantly improving the checkout flow and user experience, which resulted in a 20% increase
+in transaction completions.`,
+        `Developed a full-stack identity management web application using React, TypeScript, Node.js, and AWS Cognito for secure
+authentication, adhering to WCAG 2.0 accessibility standards. Optimized microservices with AWS Lambda and DynamoDB,
+reducing server load by 12% and lowering operational costs by 15% through infrastructure enhancements.`,
+        `Developed a front-end Edge Delivery Services (EDS) headless web application with JavaScript, achieving a perfect 100
+Lighthouse score by optimizing Largest Contentful Paint (LCP), Total Blocking Time (TBT), Time to Interactive (TTI), and First
+Input Delay (FID).`,
+        `Achieved 90% test coverage through comprehensive testing with Jest and cypress, ensuring highly resilient and maintainable
+codebases, leading to a 20% reduction in production bugs across multiple relevant projects.`,
       ],
     },
     {
@@ -28,13 +29,14 @@ resilient codebases.`,
       position: 'Software Developer',
       duration: 'May, 2021 - Sep, 2022',
       actions: [
-        `Analyzed and improved ERP applications, implementing guideline-aligned enhancements leading to a 25% increase in overall system efficiency using
-Java, SQL, and Apache.`,
-        `Developed backend controllers, reducing API response time by 20% and enhancing system responsiveness using Java and SQL.`,
-        `Optimized database queries, slashing data retrieval time by 20% and boosting application performance by 15% using SQL.`,
-        `Implemented testing protocols, achieving a 90% unit test coverage to ensure application stability in Java/JUnit and SQL.`,
-        `Developed and implemented a data analysis tool using Python that reduced manual processing time by 50%, improving data accuracy and enabling
-faster decision-making for the finance department.`,
+        `Analyzed and enhanced ERP applications, implementing performance optimizations and guideline-aligned improvements using
+Java, SQL, and Apache Tomcat, resulting in a 25% increase in overall system efficiency.`,
+        `Developed and optimized backend controllers with Java and SQL, reducing API response time by 20% and significantly
+improving system responsiveness, leading to faster user interactions.`,
+        `Optimized database queries through advanced indexing and query restructuring, cutting data retrieval time by 20% and
+improving overall application performance by 15%.`,
+        `Implemented comprehensive testing protocols, achieving 90% unit test coverage with JUnit, ensuring application stability and
+reducing production defects by 25%.`,
       ],
     },
     {
@@ -42,12 +44,13 @@ faster decision-making for the finance department.`,
       position: 'Tech Lead',
       duration: 'Dec, 2021 - Oct, 2022',
       actions: [
-        `Led the development of responsive and SEO optimized SPA and a certification web application, ensuring accessibility compliance using TypeScript,
-NextJS and MongoDB.`,
-        `Established code architecture strategies, guided tool and package selections, and mentored developers reducing overhead costs by 80%.`,
-        `Collaborated within an agile team of front-end developers, maintaining project structure and code quality through code reviews reducing time to
-deploy by 50%.`,
-        `Developed a sophisticated data visualization dashboard using DJ3 providing real-time insights, thereby enhancing analytical capabilities by 60%.`,
+        `Led the development of a responsive, SEO-optimized single-page application (SPA) and a certification web app using TypeScript,
+Next.js, and MongoDB, ensuring accessibility compliance with WCAG standards, and improving user engagement by enhancing
+performance and searchability.`,
+        `Designed scalable code architecture and implementation strategies and optimized tool and package selections, reducing
+overhead costs by 20% while mentoring junior developers and ensuring consistent code quality across the team.`,
+        `Collaborated in an agile environment, conducting regular code reviews and ensuring project structure integrity, leading to a 50%
+reduction in deployment time by streamlining development workflows and improving team productivity.`,
       ],
     },
   ],
