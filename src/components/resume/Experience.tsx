@@ -11,7 +11,7 @@ const experience = {
       position: 'Intermediate Software Developer',
       duration: 'Sep, 2022 - Present',
       actions: [
-        `Developed and deployed a full-stack serverless web application utilizing AWS (Amplify, Lambda, Cognito, DynamoDB, API
+        `Developed a full-stack serverless web application utilizing AWS (Amplify, Lambda, Cognito, DynamoDB, API
 Gateway), Vue.js, and Node.js, significantly improving the checkout flow and user experience, which resulted in a 20% increase
 in transaction completions.`,
         `Developed a full-stack identity management web application using React, TypeScript, Node.js, and AWS Cognito for secure
