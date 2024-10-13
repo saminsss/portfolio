@@ -11,16 +11,16 @@ const experience = {
       position: 'Intermediate Software Developer',
       duration: 'Sep, 2022 - Present',
       actions: [
-        `Developed a full-stack serverless web application utilizing AWS (Amplify, Lambda, Cognito, DynamoDB, API
-Gateway), Vue.js, and Node.js, significantly improving the checkout flow and user experience, which resulted in a 20% increase
-in transaction completions.`,
-        `Developed a full-stack identity management web application using React, TypeScript, Node.js, and AWS Cognito for secure
-authentication, adhering to WCAG 2.0 accessibility standards. Optimized microservices with AWS Lambda and DynamoDB,
-reducing server load by 12% and lowering operational costs by 15% through infrastructure enhancements.`,
-        `Developed a front-end Edge Delivery Services (EDS) headless web application with JavaScript, achieving a perfect 100
-Lighthouse score by optimizing Largest Contentful Paint (LCP), Total Blocking Time (TBT), Time to Interactive (TTI), and First
-Input Delay (FID).`,
-        `Achieved 90% test coverage through comprehensive testing with Jest and cypress, ensuring highly resilient and maintainable
+        `Implemented a streamlined checkout flow and subscription REST API microservice utilizing Vue.js, Typescript, AWS and Node.js
+leading to a 30% reduction in churn and a 30% boost in conversion rates.`,
+        `Implemented a notification flow and REST API microservice with event detection, notification handling and delivery preferences
+utilizing React, Typescript, Node.js, Redis and MySQL improving CTR by 35%.`,
+        `Developed pages/routes adhering to WCAG 2.0 accessibility standards using React, Next.js, Vue, Nuxt.js, Javascript and
+TypeScript ensuring an inclusive user experience.`,
+        `Contributed to SEO and performance enhancements using Adobe EDS, Google Search Console Tools, Vue.js, React, JavaScript,
+and TypeScript, improving core web vitals such as LCP, FCP, CLS, and TTI, resulting in a 10x increase in organic traffic and a
+notable improvement in user engagement.`,
+        `Achieved 95% test coverage through comprehensive testing with Jest and Playwright, ensuring highly resilient and maintainable
 codebases, leading to a 20% reduction in production bugs across multiple relevant projects.`,
       ],
     },
@@ -29,14 +29,14 @@ codebases, leading to a 20% reduction in production bugs across multiple relevan
       position: 'Software Developer',
       duration: 'May, 2021 - Sep, 2022',
       actions: [
-        `Analyzed and enhanced ERP applications, implementing performance optimizations and guideline-aligned improvements using
-Java, SQL, and Apache Tomcat, resulting in a 25% increase in overall system efficiency.`,
-        `Developed and optimized backend controllers with Java and SQL, reducing API response time by 20% and significantly
-improving system responsiveness, leading to faster user interactions.`,
+        `Enhanced ERP applications by implementing performance optimizations using Java, SQL, and Apache Tomcat, resulting in a 25%
+boost in system efficiency.`,
+        `Developed and optimized backend controllers with Java, MS SQL/Oracle, reducing API response time by 20% and significantly
+improving system responsiveness, driving faster user interactions.`,
         `Optimized database queries through advanced indexing and query restructuring, cutting data retrieval time by 20% and
-improving overall application performance by 15%.`,
-        `Implemented comprehensive testing protocols, achieving 90% unit test coverage with JUnit, ensuring application stability and
-reducing production defects by 25%.`,
+increasing application performance by 15%.`,
+        `Achieved 90% test coverage through comprehensive unit testing using JUnit, enhancing application stability and reducing
+production defects by 25%.`,
       ],
     },
     {
@@ -44,13 +44,13 @@ reducing production defects by 25%.`,
       position: 'Tech Lead',
       duration: 'Dec, 2021 - Oct, 2022',
       actions: [
-        `Led the development of a responsive, SEO-optimized single-page application (SPA) and a certification web app using TypeScript,
-Next.js, and MongoDB, ensuring accessibility compliance with WCAG standards, and improving user engagement by enhancing
-performance and searchability.`,
-        `Designed scalable code architecture and implementation strategies and optimized tool and package selections, reducing
-overhead costs by 20% while mentoring junior developers and ensuring consistent code quality across the team.`,
-        `Collaborated in an agile environment, conducting regular code reviews and ensuring project structure integrity, leading to a 50%
-reduction in deployment time by streamlining development workflows and improving team productivity.`,
+        `Led the development of a responsive, SEO-optimized SPA and certification web application in a team of three, using TypeScript,
+Next.js, and MongoDB. Ensured WCAG compliance, resulting in increased user engagement through enhanced searchability and
+overall performance improvements.`,
+        `Designed scalable code architecture and implementation strategies, optimizing tool and package selections, reducing overhead
+costs by 20%, and mentoring junior developers to ensure code consistency and quality across the team.`,
+        `Collaborated in an agile environment, conducting code reviews and maintaining project structure integrity, reducing deployment
+time by 50% by streamlining development workflows and increasing team productivity.`,
       ],
     },
   ],
