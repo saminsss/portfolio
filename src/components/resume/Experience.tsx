@@ -23,8 +23,8 @@ const experience = {
       position: 'Software Developer',
       duration: 'May, 2021 - Sep, 2022',
       actions: [
+        `Engineered performance improvements for enterprise ERP systems, enhancing overall system efficiency by 25% through strategic backend optimizations`,
         `Built custom backend controllers to support new business requirements, resulting in automated reporting capabilities and enhanced user and utility management features, improving user workflow efficiency for 10,000+ daily active users`,
-        `Engineered performance improvements for enterprise ERP SaaS systems, enhancing overall system efficiency by 25% through strategic backend optimizations`,
         `Refined API architecture to reduce response times by 20%, dramatically improving real-time data processing and system responsiveness`,
         `Implemented advanced database optimization techniques, improving query performance and reducing computational overhead`,
         `Established rigorous testing protocols maintaining 90% test coverage, resulting in 25% reduction in production-level software defects`,
