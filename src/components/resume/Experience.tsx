@@ -11,17 +11,11 @@ const experience = {
       position: 'Intermediate Software Developer',
       duration: 'Sep, 2022 - Present',
       actions: [
-        `Implemented a streamlined checkout flow and subscription REST API microservice utilizing Vue.js, Typescript, AWS and Node.js
-leading to a 30% reduction in churn and a 30% boost in conversion rates.`,
-        `Implemented a notification flow and REST API microservice with event detection, notification handling and delivery preferences
-utilizing React, Typescript, Node.js, Redis and MySQL improving CTR by 35%.`,
-        `Developed pages/routes adhering to WCAG 2.0 accessibility standards using React, Next.js, Vue, Nuxt.js, Javascript and
-TypeScript ensuring an inclusive user experience.`,
-        `Contributed to SEO and performance enhancements using Adobe EDS, Google Search Console Tools, Vue.js, React, JavaScript,
-and TypeScript, improving core web vitals such as LCP, FCP, CLS, and TTI, resulting in a 10x increase in organic traffic and a
-notable improvement in user engagement.`,
-        `Achieved 95% test coverage through comprehensive testing with Jest and Playwright, ensuring highly resilient and maintainable
-codebases, leading to a 20% reduction in production bugs across multiple relevant projects.`,
+        `Architected LLD for user checkout flow implementing responsive frontend components and backend microservices that drove a 30% increase in conversion rates through enhanced UI/UX features`,
+        `Implemented a notification flow feature with frontend responsive components and backend microservices with event detection, notification handling and delivery preferences improving CTR by 35%`,
+        `Implemented advanced SEO optimization techniques and performance enhancements, resulting in 10x growth of organic website traffic and improved user acquisition`,
+        `Designed and developed accessibility-compliant user interfaces meeting WCAG 2.0 standards, ensuring inclusive digital experiences for users`,
+        `Developed comprehensive testing strategy achieving 95% code coverage, significantly reducing potential system vulnerabilities and enhancing overall application reliability`,
       ],
     },
     {
@@ -29,14 +23,11 @@ codebases, leading to a 20% reduction in production bugs across multiple relevan
       position: 'Software Developer',
       duration: 'May, 2021 - Sep, 2022',
       actions: [
-        `Enhanced ERP applications by implementing performance optimizations using Java, SQL, and Apache Tomcat, resulting in a 25%
-boost in system efficiency.`,
-        `Developed and optimized backend controllers with Java, MS SQL/Oracle, reducing API response time by 20% and significantly
-improving system responsiveness, driving faster user interactions.`,
-        `Optimized database queries through advanced indexing and query restructuring, cutting data retrieval time by 20% and
-increasing application performance by 15%.`,
-        `Achieved 90% test coverage through comprehensive unit testing using JUnit, enhancing application stability and reducing
-production defects by 25%.`,
+        `Built custom backend controllers to support new business requirements, resulting in automated reporting capabilities and enhanced user and utility management features, improving user workflow efficiency for 10,000+ daily active users`,
+        `Engineered performance improvements for enterprise ERP SaaS systems, enhancing overall system efficiency by 25% through strategic backend optimizations`,
+        `Refined API architecture to reduce response times by 20%, dramatically improving real-time data processing and system responsiveness`,
+        `Implemented advanced database optimization techniques, improving query performance and reducing computational overhead`,
+        `Established rigorous testing protocols maintaining 90% test coverage, resulting in 25% reduction in production-level software defects`,
       ],
     },
     {
@@ -44,13 +35,10 @@ production defects by 25%.`,
       position: 'Tech Lead',
       duration: 'Dec, 2021 - Oct, 2022',
       actions: [
-        `Led the development of a responsive, SEO-optimized SPA and certification web application in a team of three, using TypeScript,
-Next.js, and MongoDB. Ensured WCAG compliance, resulting in increased user engagement through enhanced searchability and
-overall performance improvements.`,
-        `Designed scalable code architecture and implementation strategies, optimizing tool and package selections, reducing overhead
-costs by 20%, and mentoring junior developers to ensure code consistency and quality across the team.`,
-        `Collaborated in an agile environment, conducting code reviews and maintaining project structure integrity, reducing deployment
-time by 50% by streamlining development workflows and increasing team productivity.`,
+        `Engineered web application development using cutting-edge technologies including Next.js and TypeScript`,
+        `Streamlined development workflows, reducing deployment time by 50% and minimizing operational overhead`,
+        `Strategically reduced project development costs by 20% through efficient resource allocation and process optimization`,
+        `Provided technical mentorship to cross-functional development teams, fostering knowledge sharing and skill development`,
       ],
     },
   ],
