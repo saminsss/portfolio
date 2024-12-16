@@ -15,6 +15,14 @@ const works = [
   },
   {
     num: 2,
+    title: 'Fullstack Project',
+    description:
+      'Mortfolio - AI Resume Builder.',
+    github: 'https://github.com/saminsss/mortfolio',
+    stack: ['html5', 'tailwind css', 'nextjs', 'nodejs', 'postgresql'],
+  },
+  {
+    num: 3,
     title: 'Frontend Project',
     description: 'Personal portfolio SPA showcasing my stack and projects.',
     live: '/',
@@ -22,7 +30,7 @@ const works = [
     stack: ['html5', 'tailwind css', 'nextjs'],
   },
   {
-    num: 3,
+    num: 4,
     title: 'Fullstack Project',
     description:
       'Personal SaaS web application to provide a platform for educational institutions to manage/grow their businesses. Integrated reporting tools to help institutions track and optimize operations.',
@@ -30,7 +38,7 @@ const works = [
     stack: ['html5', 'tailwind css', 'nextjs', 'nodejs', 'postgresql'],
   },
   {
-    num: 4,
+    num: 5,
     title: 'Fullstack Project',
     description:
       'Client SPA for water filtration company. Includes custom checkout process integrated with a seamless ordering process for filtered bottled water products.',
