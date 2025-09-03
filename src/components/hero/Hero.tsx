@@ -27,12 +27,12 @@ const Hero = () => {
             href="https://jubiloop.ca"
             target="_blank"
             rel="noreferrer noopener"
-            className="px-2">
-              Jubiloop
+            className="px-1">
+              jubiloop.ca
           </Link>.
         </p>
         <div className="w-72 flex flex-col md:flex-row items-center gap-4 self-center md:self-auto">
-          <Button variant="outline" className="uppercase p-0">
+          <Button asChild variant="outline" className="uppercase p-0">
             <Link
               href="https://docs.google.com/document/d/1p7LGsK1Y7-e9Im0XJVpe4B34_o60vBm2/edit?usp=sharing&ouid=112065500866897896513&rtpof=true&sd=true"
               target="_blank"
