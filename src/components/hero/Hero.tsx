@@ -27,7 +27,7 @@ const Hero = () => {
             href="https://jubiloop.ca"
             target="_blank"
             rel="noreferrer noopener"
-            className="px-1">
+            className="px-1 hover:text-secondary">
               jubiloop.ca.
           </Link>
         </p>
