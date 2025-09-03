@@ -5,7 +5,6 @@ import { Button } from '../ui/button';
 import HeroPhoto from './HeroPhoto';
 
 const skills = ['AWS', 'Javascript', 'Typescript', 'Python', 'React', 'NextJS', 'Vue', 'NuxtJS', 'NestJS', 'AdonisJS', 'Mastra AI']
-  .sort()
   .join(', ');
 
 const Hero = () => {
@@ -17,7 +16,7 @@ const Hero = () => {
           Hello! I&apos;m <br />{' '}
           <span className="text-secondary">Samin Islam</span>
         </h2>
-        <p>
+        <p max-w-[80%]>
           I excel at developing full-stack applications on web platforms. <br />
           Proficient in <span className="font-semibold">{skills}.</span>
           <br />
