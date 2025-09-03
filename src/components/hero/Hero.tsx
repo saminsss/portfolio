@@ -4,7 +4,7 @@ import Socials from '../Socials';
 import { Button } from '../ui/button';
 import HeroPhoto from './HeroPhoto';
 
-const skills = ['AWS', 'Javascript', 'Typescript', 'NodeJS', 'React', 'Vue']
+const skills = ['AWS', 'Javascript', 'Typescript', 'Python', 'React', 'NextJS', 'Vue', 'NuxtJS', 'NestJS', 'AdonisJS', 'Mastra AI']
   .sort()
   .join(', ');
 
