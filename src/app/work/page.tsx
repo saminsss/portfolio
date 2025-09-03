@@ -8,42 +8,51 @@ const works = [
     num: 1,
     title: 'Fullstack Project',
     description:
-      'Client SPA for edtech startup. Includes custom checkout process and analytics for seamless course purchases.',
-    live: 'https://uctitbd.com/',
-    github: 'https://github.com/UCT-IT/training',
-    stack: ['html5', 'tailwind css', 'nextjs', 'nodejs', 'mongodb'],
+      'Jubiloop is a modern event planning platform that combines AI-powered suggestions, seamless collaboration, and trusted vendor recommendations to help you celebrate life’s moments—stress-free and beautifully organized.',
+    live: 'https://jubiloop.ca/',
+    github: 'https://github.com/Jubiloop/jubiloop-monorepo',
+    stack: ['typescript', 'react', 'nextjs', 'adonisjs', 'postgresql', 'terraform', 'mastra ai'],
   },
   {
     num: 2,
     title: 'Fullstack Project',
     description:
-      'Mortfolio - AI Resume Builder.',
-    github: 'https://github.com/saminsss/mortfolio',
-    stack: ['html5', 'tailwind css', 'nextjs', 'nodejs', 'postgresql'],
+      'Client SPA for edtech startup. Includes custom checkout process and analytics for seamless course purchases.',
+    live: 'https://uctitbd.com/',
+    github: 'https://github.com/UCT-IT/training',
+    stack: ['react', 'tailwind css', 'nextjs', 'nodejs', 'mongodb'],
   },
   {
     num: 3,
+    title: 'Fullstack Project',
+    description:
+      'Mortfolio - AI Resume Builder.',
+    github: 'https://github.com/saminsss/mortfolio',
+    stack: ['react', 'tailwind css', 'nextjs', 'nodejs', 'postgresql'],
+  },
+  {
+    num: 4,
     title: 'Frontend Project',
     description: 'Personal portfolio SPA showcasing my stack and projects.',
     live: '/',
     github: 'https://github.com/saminsss/portfolio',
-    stack: ['html5', 'tailwind css', 'nextjs'],
-  },
-  {
-    num: 4,
-    title: 'Fullstack Project',
-    description:
-      'Personal SaaS web application to provide a platform for educational institutions to manage/grow their businesses. Integrated reporting tools to help institutions track and optimize operations.',
-    github: 'https://github.com/saminsss/Teachify',
-    stack: ['html5', 'tailwind css', 'nextjs', 'nodejs', 'postgresql'],
+    stack: ['react', 'tailwind css', 'nextjs'],
   },
   {
     num: 5,
     title: 'Fullstack Project',
     description:
+      'Personal SaaS web application to provide a platform for educational institutions to manage/grow their businesses. Integrated reporting tools to help institutions track and optimize operations.',
+    github: 'https://github.com/saminsss/Teachify',
+    stack: ['react', 'tailwind css', 'nextjs', 'nodejs', 'postgresql'],
+  },
+  {
+    num: 6,
+    title: 'Fullstack Project',
+    description:
       'Client SPA for water filtration company. Includes custom checkout process integrated with a seamless ordering process for filtered bottled water products.',
     github: 'https://github.com/saminsss/fours-group',
-    stack: ['html5', 'tailwind css', 'nextjs', 'nodejs', 'mongodb'],
+    stack: ['react', 'tailwind css', 'nextjs', 'nodejs', 'mongodb'],
   },
 ];
 const Work = () => {
