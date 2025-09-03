@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col md:flex-row gap-8 items-center justify-between text-center md:text-left">
       <div className="flex flex-col gap-6 flex-1 order-2 md:order-none">
-        <h4 className="text-secondary">Software Developer</h4>
+        <h4 className="text-secondary">Software Engineer, Co-founder</h4>
         <h2>
           Hello! I&apos;m <br />{' '}
           <span className="text-secondary">Samin Islam</span>
@@ -21,6 +21,15 @@ const Hero = () => {
           Proficient in <span className="font-semibold">{skills}.</span>
           <br />
           Based in <span className="font-semibold">Vancouver, BC, Canada.</span>
+          <br />
+          I am currently working on building an automated event streamlining SaaS platform. See the early access at 
+          <Link 
+            href="https://jubiloop.ca"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="px-2">
+              Jubiloop
+          </Link>.
         </p>
         <div className="w-72 flex flex-col md:flex-row items-center gap-4 self-center md:self-auto">
           <Button variant="outline" className="uppercase p-0">
