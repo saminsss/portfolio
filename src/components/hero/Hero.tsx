@@ -16,7 +16,7 @@ const Hero = () => {
           Hello! I&apos;m <br />{' '}
           <span className="text-secondary">Samin Islam</span>
         </h2>
-        <p className="max-w-[80%]">
+        <p>
           I excel at developing full-stack applications on web platforms. <br />
           Proficient in <span className="font-semibold">{skills}.</span>
           <br />
